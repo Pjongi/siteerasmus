@@ -1,0 +1,64 @@
+body {
+}
+
+.image {
+	max-width: 20vw;
+	height: 100vh;
+	object-fit: cover;
+  	filter: brightness(35%);
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+	animation: fadeInAnimation ease 1s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        filter: brightness(70%);
+    }
+    100% {
+        filter: brightness(35%);
+     }
+}
+
+.img1 {
+  animation-delay: .15s;
+}
+.img2 {
+  animation-delay: .30s;
+}
+.img3 {
+  animation-delay: .45s;
+}
+.img4 {
+  animation-delay: .60s;
+}
+.img5 {
+  animation-delay: .75s;
+}
+
+.image:hover {
+  -webkit-filter: brightness(110%) !important;
+  filter: brightness(110%) !important;
+}
+
+.d-flex {
+	background-color: black !important;
+}
+
+.text {
+	color: white;
+	position: absolute;
+	bottom: 38vh;
+	text-align: center;
+	width: 100%;
+	font-size: 170px;
+	letter-spacing: 12px;
+	pointer-events:none;
+	animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+  	animation-duration: 1s;
+}
+
+
+.shadowclass {
+	text-shadow: 1px 1px 1px black;
+}
