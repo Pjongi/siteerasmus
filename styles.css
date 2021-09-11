@@ -1,6 +1,25 @@
 body {
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#pc {
+	display: none !important;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+	#mobile {
+	display: none !important;
+	}
+
+	.image {
+		width: 330vw !important;
+		height: 20vh !important;
+	}
+}
+
 .image {
 	max-width: 19vw;
 	height: 100vh;
@@ -48,12 +67,10 @@ body {
 
 .text {
 	color: white;
-	
 	position: absolute;
 	bottom: 35vh;
 	text-align: center;
 	width: 100%;
-
 	font-size: 8vw;
 	letter-spacing: 12px;
 	pointer-events:none;
