@@ -1,0 +1,27 @@
+html {
+	color: White;
+	background-color: #091010;
+	font-size: 1.35vw;
+}
+
+#Tytul {
+	margin: 2vw;
+}
+h1 {
+	text-align: center;
+	font-size: 4vw;
+}
+
+#opis {
+	margin: 2vw;
+}
+
+#lista {
+	margin: 2vw;
+	float: left;
+}
+
+#mapa {
+	margin: 2vw;
+	float: right;
+}

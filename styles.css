@@ -1,0 +1,85 @@
+body {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#pc {
+	display: none !important;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+	#mobile {
+	display: none !important;
+	}
+
+	.image {
+		width: 100vw !important;
+		max-width: 100vw !important;
+		height: 19vh !important;
+	}
+}
+
+.image {
+	max-width: 19vw;
+	height: 100vh;
+	object-fit: cover;
+  	filter: brightness(35%);
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+	animation: fadeInAnimation ease 1s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        filter: brightness(70%);
+    }
+    100% {
+        filter: brightness(35%);
+     }
+}
+
+.img1 {
+  animation-delay: .15s;
+}
+.img2 {
+  animation-delay: .30s;
+}
+.img3 {
+  animation-delay: .45s;
+}
+.img4 {
+  animation-delay: .60s;
+}
+.img5 {
+  animation-delay: .75s;
+}
+
+.image:hover {
+  -webkit-filter: brightness(110%) !important;
+  filter: brightness(110%) !important;
+  max-width: 24vw;
+}
+
+.d-flex {
+	background-color: black !important;
+}
+
+.text {
+	color: white;
+	position: absolute;
+	bottom: 35vh;
+	text-align: center;
+	width: 100%;
+	font-size: 8vw;
+	letter-spacing: 12px;
+	pointer-events:none;
+	animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+  	animation-duration: 1s;
+}
+
+
+.shadowclass {
+	text-shadow: 1px 1px 1px black;
+}
