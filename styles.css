@@ -2,7 +2,7 @@ body {
 }
 
 .image {
-	max-width: 20vw;
+	max-width: 19vw;
 	height: 100vh;
 	object-fit: cover;
   	filter: brightness(35%);
@@ -39,6 +39,7 @@ body {
 .image:hover {
   -webkit-filter: brightness(110%) !important;
   filter: brightness(110%) !important;
+  max-width: 24vw;
 }
 
 .d-flex {
@@ -47,10 +48,12 @@ body {
 
 .text {
 	color: white;
+	
 	position: absolute;
 	bottom: 35vh;
 	text-align: center;
 	width: 100%;
+
 	font-size: 8vw;
 	letter-spacing: 12px;
 	pointer-events:none;
